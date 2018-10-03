@@ -25,18 +25,32 @@ Perform the following written operations:
 1 ->
 
 
-unzip("x.zip")
+1.unzip("x.zip")
+
 for (i in files.temp)
+
 unzip(i)
+
 airqual <- read.table("C:/Desktop/airquality.txt")
+
 airquality <- read.csv("~/CUNY/Bridge Classes/R Programming/Week4/airquality.csv", row.names=1) head(airquality)
-ggplot(airquality, aes(x = Ozone)) + geom_histogram(binwidth = 5, fill="green", color="black")
+
+2.ggplot(airquality, aes(x = Ozone)) + geom_histogram(binwidth = 5, fill="green", color="black")
+
 3.We can use two colsums or apply. Please see below
+
 colSums(is.na(airquality))
+
         or 
+        
 apply(is.na(airquality),2,sum)
-md.pattern(airquality)
-t.test(airquality)
-We need to use Z value to find check whether H0 is accepted or rejected
-table(airquality)
-ts(inputData,frequency = 1, start = c(2018, 2)
+
+4.md.pattern(airquality)
+
+5.t.test(airquality)
+
+6.We need to use Z value to find check whether H0 is accepted or rejected
+
+7.table(airquality)
+
+8.ts(inputData,frequency = 1, start = c(2018, 2)
